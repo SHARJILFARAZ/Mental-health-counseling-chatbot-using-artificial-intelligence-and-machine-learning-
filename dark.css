@@ -1,0 +1,248 @@
+/* Dark Theme */
+body, .stApp {
+    font-family: 'arial', sans-serif;
+    background: #121212 !important;
+    color: #ffffff !important;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease; /* Added transition for background color */
+}
+
+/* Header Styles */
+h1 {
+    font-size: 40px !important; /* Match light mode size */
+    text-align: center;
+    color: #970747; /* Updated to dark pink */
+    font-weight: bold;
+    margin-top: 20px;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.1);
+    animation: fadeIn 1s ease-in-out; /* Added fade-in animation */
+}
+
+p {
+    font-size: 20px; /* Match light mode size */
+    text-align: center;
+    color: #ffffff;
+    line-height: 1.6;
+    animation: fadeIn 1s ease-in-out; /* Added fade-in animation */
+}
+
+/* Stats Section */
+.stats {
+    font-size: 24px;
+    color: #970747; /* Updated to dark pink */
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+    animation: fadeIn 1s ease-in-out; /* Added fade-in animation */
+}
+
+/* Feedback Card */
+.feedback-card {
+    text-align: center;
+    margin-top: 10px;
+    padding: 20px;
+    background: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2); /* Increased shadow for better effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transition for transform and box-shadow */
+}
+
+.feedback-card:hover {
+    transform: translateY(-10px); /* Added hover effect */
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.3); /* Enhanced shadow on hover */
+}
+
+/* Circular DP Effect */
+.circular-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #970747; /* Updated to dark pink */
+    transition: transform 0.3s ease; /* Added transition for transform */
+}
+
+.circular-img:hover {
+    transform: scale(1.1); /* Added hover effect */
+}
+
+/* Footer */
+.footer {
+    background-color: #222;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px; /* Match light mode size */
+    border-radius: 10px;
+    margin-top: 30px;
+    animation: fadeIn 1s ease-in-out; /* Added fade-in animation */
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Button Styling */
+.stButton>button {
+    background-color: #000000 !important; /* Updated to dark pink */
+    color: #970747 !important;
+    border: none;
+    padding: 10px 20px; /* Match light mode padding */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px; /* Match light mode size */
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+}
+
+.stButton>button:hover {
+    background-color: #6b4355 !important; /* Updated to white */
+    color: #970747 !important; /* Updated to dark pink */
+    border: 2px solid #970747 !important; /* Added border for better visibility */
+    transform: scale(1.05);
+}
+
+/* Chat & Auth Page */
+#chat-page, #auth-page {
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2); /* Increased shadow for better effect */
+    color: #ffffff;
+    animation: fadeIn 1s ease-in-out; /* Added fade-in animation */
+}
+
+/* Sidebar */
+.stSidebar {
+    background-color: #222;
+    color: white;
+    transition: background-color 0.3s ease; /* Added transition for background color */
+}
+
+.stSidebar .stButton>button {
+    background-color: #970747; /* Updated to dark pink */
+    color: black;
+    border: none;
+    padding: 10px 20px; /* Match light mode padding */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px; /* Match light mode size */
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+}
+
+.stSidebar .stButton>button:hover {
+    background-color: #ffffff; /* Updated to white */
+    color: #970747; /* Updated to dark pink */
+    border: 2px solid #970747; /* Added border for better visibility */
+    transform: scale(1.05);
+}
+
+/* Sidebar Text */
+.stSidebar .css-1d391kg, .stSidebar .css-1v3fvcr, .stSidebar .css-1v3fvcr, .stSidebar .css-1v3fvcr {
+    color: #ffffff !important; /* Updated to dark pink */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Authentication Card */
+.container {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    perspective: 1000px;
+    margin: 50px auto;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease-in-out;
+}
+
+.flip .card {
+    transform: rotateY(180deg);
+}
+
+.card-side {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    background: #333;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+h2 {
+    color: #970747;
+    margin-bottom: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background: #444;
+    color: #fff;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #f8f4f6, #e7a3c2);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #e7a3c2, #f8f4f6);
+}
+
+.toggle {
+    margin-top: 15px;
+    color: #ccc;
+    cursor: pointer;
+}
+
